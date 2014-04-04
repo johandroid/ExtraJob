@@ -38,13 +38,35 @@
 <body>
 <div data-role="page">
     <div data-role="header">
-        <h1>Soy el header</h1>
+        <h1>El mejor portal de trabajo</h1>
     </div>
     <div role="main">
-        <a data-role="button">Oferto</a>
-        <a data-role="button">Busco</a>
+        <div data-role="collapsible" data-inline="true">
+            <h2>Oferto</h2>
+            <form>
+                <label for="nombre1">Nombre</label>
+                <input type="text" name="nombre1" id="nombre1" value="Tu Nombre">
+                <label for="correo1">Correo</label>
+                <input type="text" name="correo1" id="correo1" value="Correo">
+                <label for="otro1">Otro</label>
+                <input type="text" name="otro1" id="otro1" value="Otro">
+            </form>
+        </div>
+        <div data-role="collapsible" data-inline="true">
+            <h2>Busco</h2>
+            <form>
+                <label for="nombre2">Nombre</label>
+                <input type="text" name="nombre2" id="nombre2" value="Tu Nombre">
+                <label for="correo2">Correo</label>
+                <input type="text" name="corre2o" id="correo2" value="Correo">
+                <label for="otro2">Otro</label>
+                <input type="text" name="otro2" id="otro2" value="Otro">
+            </form>
+        </div>
     </div>
-    <div role="footer">JohanDroid --> 2014</div>
+    <!--
+    <div role="footer">JohanDroid 2014</div>
+    -->
 </div>
 </body>
 </html>
