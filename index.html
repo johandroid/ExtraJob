@@ -1,7 +1,7 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>fuente de múltiples elementos</title>
+    <title>El portal de oferta y demanda de trabajo instantanea</title>
     <meta name="author" content="JohanDroid">
     <meta name="title" content="Encuentra tu trabajo sin limitaciones">
     <meta name="description" content="Es una herramienta que dinamiza la situación adecuada del mercado laboral y la integración social y laboral de las personas con discapacidad">
@@ -14,12 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.2.min.css">
-    <link rel="stylesheet" href="/css/jqm-demos.css">
+    <link rel="stylesheet" href="css/jqm-demos.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
     <!-- Fin jQuery Mobile-->
-    <link rel="stylesheet" type="text/css" href="css">
+    <link rel="stylesheet" type="text/css" href="css/miCSS.css">
     <script src="js/"></script>
     <!-- GoogleAnalytics-->
     <script>
@@ -40,8 +40,8 @@
     <div data-role="header">
         <h1>El mejor portal de trabajo</h1>
     </div>
-    <div role="main">
-        <div data-role="collapsible" data-inline="true">
+    <div role="main" data-inline="true" id="main1">
+        <div data-role="collapsible" class="colapsaIni">
             <h2>Oferto</h2>
             <form>
                 <label for="nombre1">Nombre</label>
@@ -52,7 +52,7 @@
                 <input type="text" name="otro1" id="otro1" value="Otro">
             </form>
         </div>
-        <div data-role="collapsible" data-inline="true">
+        <div data-role="collapsible" class="colapsaIni">
             <h2>Busco</h2>
             <form>
                 <label for="nombre2">Nombre</label>
@@ -64,9 +64,7 @@
             </form>
         </div>
     </div>
-    <!--
-    <div role="footer">JohanDroid 2014</div>
-    -->
+    <div data-role="footer" data-position="fixed"><h3>JohanDroid 2014</h3></div>
 </div>
 </body>
 </html>
