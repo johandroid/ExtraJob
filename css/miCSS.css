@@ -7,5 +7,45 @@
 #main1
 {
     margin: 0 auto;
-    padding: 10%;
+    width: 100%;
+}
+.header
+{
+    text-align: center;
+}
+.logo
+{
+    margin-top: 20px;
+    width: 24%;
+}
+.zona1
+{
+    width: 50%;
+    background-color:#b70347;
+}
+.zona2
+{
+    width: 50%;
+    background-color: #dddddd;
+}
+.zonas
+{
+    margin: 0;
+    float: left;
+}
+.zonas *
+{
+    margin: 20px;
+}
+.empresa
+{
+    background-color: #b70347;
+}
+.empleado
+{
+    background-color: #dddddd;
+}
+.footer
+{
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>El portal de oferta y demanda de trabajo instantanea</title>
     <meta http-equiv="Content-Language" content="es">
@@ -31,44 +31,182 @@
 
     </script>
     <!-- Fin GoogleAnalytics-->
-
 </head>
 <body>
-<div data-role="page">
-    <div data-role="header">
-        <h1>El mejor portal de trabajo 3</h1>
+<div data-role="page" id="main" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png"> Tu oportunidad
+    </div>
+    <div data-role="main" id="main1">
+        <div class="zona1 zonas"><a href="#regEmpresa" data-role="button"  ><img src="img/Empresarios.png">Quiero Ayudar</a></div>
+        <div class="zona2 zonas"><a href="#regEmpleado" data-role="button" ><img src="img/Trabajadores.png">Quiero Trabajar</a></div>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
+</div>
+<div data-role="page" id="regEmpresa" class="empresa" >
+<div data-role="header" class="header" >
+    <img class="logo" src="img/logo.png">
+</div>
+<div data-role="main" data-inline="true" id="main1">
+    <div data-role="collapsible" class="colapsaIni "><h2 ><a href="#">Accede</a></h2>
+        <form>
+            <label for="correo1">Correo</label>
+            <div ><input type="email" name="correo1" id="correo1" value="Correo"></div>
+            <label for="pass1">Password</label>
+            <div ><input type="password" name="pass1" id="pass1" value="Otro"></div>
+            <a href="#ofertas"><div ><input type="submit" value="Accede"></div></a>
+        </form>
+    </div>
+    <div data-role="collapsible" class="colapsaIni"><h2 ><a href="#" >Registrate</a></h2>
+        <form>
+            <label for="nombre2">Nombre</label>
+            <div ><input type="text" name="nombre2" id="nombre2" value="Tu Nombre"></div>
+            <label for="correo2">Correo</label>
+            <div ><input type="text" name="corre2o" id="correo2" value="Correo"></div>
+            <label for="otro2">PassWord</label>
+            <div ><input type="password" name="otro2" id="otro2" value="Otro"></div>
+            <a href="#ofertas"><div ><input type="submit" value="Registrate"></div></a>
+        </form>
+    </div>
+</div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
+</div>
+
+<div data-role="page" id="regEmpleado" class="empleado" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png">
     </div>
     <div data-role="main" data-inline="true" id="main1">
-        <div data-role="collapsible" class="colapsaIni">
-            <h2>Oferto</h2>
+        <div data-role="collapsible" class="colapsaIni "><h2 ><a href="#">Accede</a></h2>
             <form>
-                <label for="nombre1">Nombre</label>
-                <input type="text" name="nombre1" id="nombre1" value="Tu Nombre">
                 <label for="correo1">Correo</label>
-                <input type="text" name="correo1" id="correo1" value="Correo">
-                <label for="otro1">Otro</label>
-                <input type="text" name="otro1" id="otro1" value="Otro">
+                <div ><input type="email" name="correo1" id="correo1" value="Correo"></div>
+                <label for="pass1">Password</label>
+                <div ><input type="password" name="pass1" id="pass1" value="Otro"></div>
+                <a href="#busca"><div ><input type="submit" value="Accede"></div></a>
             </form>
         </div>
-        <div data-role="collapsible" class="colapsaIni">
-            <h2>Busco</h2>
+        <div data-role="collapsible" class="colapsaIni"><h2 ><a href="#" >Registrate</a></h2>
             <form>
                 <label for="nombre2">Nombre</label>
-                <input type="text" name="nombre2" id="nombre2" value="Tu Nombre">
+                <div ><input type="text" name="nombre2" id="nombre2" value="Tu Nombre"></div>
                 <label for="correo2">Correo</label>
-                <input type="text" name="corre2o" id="correo2" value="Correo">
-                <label for="otro2">Otro</label>
-                <input type="text" name="otro2" id="otro2" value="Otro">
+                <div ><input type="text" name="corre2o" id="correo2" value="Correo"></div>
+                <label for="edad">Edad</label>
+                <div ><input type="number" name="edad" id="edad" value="Tu edad"></div>
+                <label for="riesgo">Tienes algún riesgo de exclusión? Te apoyamos¡¡</label>
+                <div >
+                    <input type="checkbox" name="riesgo" id="riesgo">
+                </div>
+                <label for="pass2">PassWord</label>
+                <div ><input type="password" name="pass2" id="pass2" value="Otro"></div>
+                <a href="#busca"><div ><input type="submit" value="Registrate"></div></a>
             </form>
         </div>
     </div>
-    <div data-role="footer" data-position="fixed"><h3>JohanDroid 2014</h3></div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
 </div>
-<div data-role="page" id="p2">
 
-</div>
-<div data-role="p3">
 
+<div data-role="page" id="ofertas" class="empresa" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png">
+    </div>
+    <div data-role="main" data-inline="true" id="main1">
+        <div id="ojo">
+            <div data-role="collapsible" class="colapsaIni"><h2 ><a href="#" >Ofertas</a></h2>
+                <ul>
+                    <li>Oferta 1
+                        <div><span>Juana - </span><span>25 - </span><span>Recomendado - </span><span>Ranking 4</span></div>
+                        <div><span>Pepito - </span><span>35 - </span><span>Recomendado - </span><span>Ranking 4</span></div>
+                        <div><span>Alicia - </span><span>28 - </span><span></span> - <span>Ranking 3</span></div>
+                        <div><span>Ali - </span><span>52 - </span><span>Recomendad - </span><span>Ranking 5</span></div>
+                    </li>
+                    <li>Oferta 2
+                        <div><span>Juana - </span><span>25 - </span><span>Recomendado - </span><span>Ranking 4</span></div>
+                        <div><span>Pepito - </span><span>35 - </span><span>Recomendado - </span><span>Ranking 4</span></div>
+                        <div><span>Alicia - </span><span>28 - </span><span></span> - <span>Ranking 3</span></div>
+                        <div><span>Ali - </span><span>52 - </span><span>Recomendad - </span><span>Ranking 5</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="pergamino">
+            <a data-role="button" href="#nuevaOferta">Ofrece</a>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
 </div>
+
+
+<div data-role="page" id="busca" class="empleado" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png">
+    </div>
+    <div data-role="main" data-inline="true" id="main1">
+        <li>
+            <a><div><span>Empresa1 - </span><span>Cargo1 - </span><span>Telefono - </span><span>Ranking 4</span></div></a>
+            <a><div><span>Empresa2 - </span><span>Cargo2 - </span><span>Telefono - </span><span>Ranking 4</span></div></a>
+            <a><div><span>Empresa3 - </span><span>Cargo3 - </span><span></span>Telefono - <span>Ranking 3</span></div></a>
+            <a><div><span>Empresa4 - </span><span>Cargo4 - </span><span>Telefono- </span><span>Ranking 5</span></div></a>
+        </li>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
+</div>
+
+
+<div data-role="page" id="nuevaOferta" class="empresa" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png">
+    </div>
+    <div data-role="main" data-inline="true" id="main1">
+        <form>
+            <label for="nombre2">Lugar</label>
+            <div ><input type="text" name="nombre2" id="nombre2" value="Ubicación"></div>
+            <label for="correo2">Correo</label>
+            <input type="text" name="corre2o" id="correo2" value="Correo">
+            <label for="tel">Tienes algún riesgo de exclusión? Te apoyamos¡¡</label>
+            <div ><input type="tel" name="tel" id="tel" value="654321987"></div>
+            <label for="cargo">PassWord</label>
+            <div ><input type="text" name="cargo" id="cargo" value="Otro"></div>
+            <a href="#formRegEmpresa"><div ><input type="submit" value="Accede"></div></a>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
+</div>
+
+
+<div data-role="page" id="listaEmpleado" class="empleado" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png">
+    </div>
+    <div data-role="main" data-inline="true" id="main1">
+        <ul>
+            <li>Oferta 1
+                <div><span>Juana</span><span>25</span><span>Recomendado</span><span>Ranking 4</span></div>
+                <div><span>Pepito</span><span>35</span><span>Recomendado</span><span>Ranking 4</span></div>
+                <div><span>Alicia</span><span>28</span><span></span><span>Ranking 3</span></div>
+                <div><span>Ali</span><span>52</span><span>Recomendad</span><span>Ranking 5</span></div>
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
+</div>
+
+
+<div data-role="page" id="listaEmpresa" class="empleado" >
+    <div data-role="header" class="header" >
+        <img class="logo" src="img/logo.png">
+    </div>
+    <div data-role="main" data-inline="true" id="main1">
+        <ul>
+            <li>
+
+            </li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer" ><h3 >JohanDroid 2014</h3><a href="#main" data-role="button"><img src=""> Inicio</a></div>
+</div>
+
 </body>
 </html>
